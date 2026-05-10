@@ -8,6 +8,7 @@ import SmartMonitoring from '../components/SmartMonitoring';
 import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonials';
 import GridIndependence from '../components/GridIndependence';
+import CybertruckFleet from '../components/CybertruckFleet';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <RoofEngineering />
             <SmartMonitoring />
             <FAQ />
+            <CybertruckFleet />
             <Testimonials />
             <GridIndependence />
         </>

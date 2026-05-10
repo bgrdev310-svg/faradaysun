@@ -13,6 +13,13 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const RequestStatusPage = lazy(() => import('./pages/RequestStatusPage'));
 const AuthPage = lazy(() => import('./pages/AuthPage'));
+const CybertruckPage = lazy(() => import('./pages/CybertruckPage'));
+const EstimatePage = lazy(() => import('./pages/EstimatePage'));
+const SolarPage = lazy(() => import('./pages/SolarPage'));
+const RoofingPage = lazy(() => import('./pages/RoofingPage'));
+const HailPage = lazy(() => import('./pages/HailPage'));
+const WindowsPage = lazy(() => import('./pages/WindowsPage'));
+const PellaInstallersPage = lazy(() => import('./pages/PellaInstallersPage'));
 
 // Admin Pages
 const DashboardPage = lazy(() => import('./pages/admin/DashboardPage'));
@@ -54,6 +61,13 @@ function App() {
             <Route path="/AboutPage" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/request-status" element={<RequestStatusPage />} />
+            <Route path="/cybertruck" element={<CybertruckPage />} />
+            <Route path="/estimate" element={<EstimatePage />} />
+            <Route path="/solar" element={<SolarPage />} />
+            <Route path="/roofing" element={<RoofingPage />} />
+            <Route path="/hail" element={<HailPage />} />
+            <Route path="/windows" element={<WindowsPage />} />
+            <Route path="/pella-certified-window-installers" element={<PellaInstallersPage />} />
           </Route>
 
           {/* Admin Routes */}

@@ -276,16 +276,7 @@ const AuthPage = () => {
         </div>
       </div>
 
-      {/* Mobile brand */}
-      <div className="auth-mob-brand">
-        <div className="auth-hero-logo">
-          <div className="auth-hero-logo-icon">
-            <Sun size={20} />
-          </div>
-          SOLAR <b>PANEL</b>
-        </div>
-        <p className="auth-hero-sub">Intelligent solar energy platform</p>
-      </div>
+
     </div>
   );
 };

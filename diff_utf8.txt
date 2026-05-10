@@ -1,0 +1,68 @@
+﻿diff --git a/src/index.css b/github_index2.css
+index 2229cbe..04699b4 100644
+--- a/src/index.css
++++ b/github_index2.css
+@@ -32,6 +32,7 @@
+ }
+ 
+ html, body {
++  overflow-x: hidden;
+ }
+ 
+ body {
+@@ -297,7 +298,7 @@ body {
+ .michroma-title {
+   font-family: 'Michroma', sans-serif;
+   color: #fff;
+-  font-size: clamp(26px, 3.5vw, 42px);
++  font-size: 42px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   white-space: normal;
+@@ -435,22 +436,18 @@ body {
+ .hero-bento {
+   position: relative;
+   width: 100%;
+-  aspect-ratio: 1200 / 420;
+-  min-height: 300px;
++  height: 420px;
+   background-image: url("/heroimg.png");
+   background-size: auto 100%;
+   background-position: right center;
+   background-repeat: no-repeat;
+   background-color: transparent;
+-  border-radius: var(--radius-lg);
+-  overflow: hidden;
+ }
+ 
+ .hero-title-top {
+   position: absolute;
+   top: 7%;
+   left: 2%;
+-  max-width: 60%;
+   z-index: 2;
+ }
+ 
+@@ -458,7 +455,6 @@ body {
+   position: absolute;
+   top: 25%;
+   left: 2%;
+-  max-width: 60%;
+   z-index: 2;
+ }
+ 
+@@ -494,14 +490,6 @@ body {
+   display: block;
+ }
+ 
+-/* Explicit text wrapping controls */
+-.mobile-break {
+-  display: none;
+-}
+-.desktop-break {
+-  display: block;
+-}
+-
+ /* ========================================
+    RESPONSIVE DESIGN - TABLET (Ôëñ768px)
+    ======================================== */

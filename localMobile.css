@@ -1,0 +1,279 @@
+ {
+  body {
+    padding: 0.5rem;
+  }
+
+  .michroma-title {
+    font-size: 22px !important;
+    letter-spacing: 0.5px;
+  }
+
+  /* FAQ Page Mobile */
+  .faq-section {
+    padding: 16px 12px 32px 12px !important;
+  }
+
+  .faq-header h1 {
+    font-size: 24px !important;
+  }
+
+  .faq-header p {
+    font-size: 14px !important;
+  }
+
+  .faq-card {
+    padding: 20px 16px !important;
+  }
+
+  .faq-card h3 {
+    font-size: 15px !important;
+  }
+
+  .faq-card p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Gallery Page Mobile */
+  .gallery-section {
+    padding: 16px 10px 40px 10px !important;
+  }
+
+  .gallery-header h1 {
+    font-size: 24px !important;
+  }
+
+  .gallery-item {
+    min-height: 200px !important;
+  }
+
+  .gallery-item img {
+    min-height: 240px !important;
+  }
+
+  .gallery-caption h3 {
+    font-size: 16px !important;
+  }
+
+  .gallery-caption span {
+    font-size: 12px !important;
+  }
+
+  /* ===== HOME PAGE COMPONENTS MOBILE ===== */
+
+  /* Hero Section Mobile */
+  .hero-bento {
+    height: auto !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    background: linear-gradient(135deg, rgba(20, 25, 30, 0.6) 0%, rgba(10, 12, 15, 0.4) 100%) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(0, 212, 255, 0.15) !important;
+    background-image: none !important; /* Image is now a separate element */
+    border-radius: 48px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 30px 20px !important;
+    gap: 20px !important;
+    box-shadow: 0 10px 40px -10px rgba(0, 212, 255, 0.1), inset 0 0 20px rgba(0, 212, 255, 0.03) !important;
+  }
+
+  .hero-title-top,
+  .hero-title-bottom,
+  .hero-content-area,
+  .hero-status-pill {
+    position: static !important;
+    transform: none !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 1. Header Area */
+  .hero-title-top h1, 
+  .hero-title-bottom h1 {
+    font-family: 'Michroma', sans-serif !important;
+    font-size: 26px !important;
+    letter-spacing: 0px !important;
+    -webkit-text-stroke: 0px !important;
+    line-height: 1.2 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+  }
+  
+  .hero-title-top {
+      margin-bottom: 2px !important;
+  }
+
+  .hero-title-bottom {
+      margin-bottom: 8px !important;
+  }
+
+  .hero-content-area {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .desktop-cta {
+    display: none !important;
+  }
+
+  .hero-content-area .subheadline {
+    margin-bottom: 0 !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  /* 2. Hero Image */
+  .hero-mobile-image-container {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .hero-mobile-image {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 32px !important;
+    display: block !important;
+  }
+
+  /* 3. Stats Row */
+  .hero-status-pill {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-status-pill > .flex-row {
+    margin-left: 0 !important; 
+  }
+
+  /* 4. CTA Button (Bottom) */
+  .mobile-cta {
+    display: block !important;
+    margin: 0 auto !important;
+    width: auto !important;
+    background-color: #00f2ff !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border-radius: 100px !important;
+    padding: 14px 40px !important;
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.4) !important;
+    transition: transform 0.2s ease !important;
+    font-size: 15px !important;
+  }
+
+  .subheadline {
+    font-size: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .cta-button {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  /* Feature Cards Mobile */
+  .feature-cards-grid {
+    gap: 12px !important;
+  }
+
+  /* Process Mobile */
+  .process-section {
+    margin-top: 40px !important;
+  }
+
+  /* Roof Engineering Mobile */
+  .roof-section {
+    gap: 24px !important;
+    padding: 0 12px !important;
+    margin-top: 40px !important;
+  }
+
+  .house-mockup {
+    width: 240px !important;
+    height: 240px !important;
+  }
+
+  .house-mockup svg {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  /* Home FAQ Mobile */
+  .home-faq-section {
+    margin-top: 40px !important;
+    padding: 0 10px !important;
+  }
+
+  .home-qa-card {
+    padding: 20px 16px !important;
+  }
+
+  .home-qa-card h3 {
+    font-size: 15px !important;
+  }
+
+  .home-qa-card p {
+    font-size: 14px !important;
+  }
+
+  /* Grid Independence Mobile */
+  .grid-independence {
+    min-height: 350px !important;
+  }
+
+  .grid-independence-content {
+    padding: 32px 16px !important;
+  }
+
+  /* About Page Mobile */
+  .about-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Services Page Mobile */
+  .services-hero-media svg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .impact-grid > div {
+    flex: 1 1 100%;
+  }
+
+  /* Smart Monitoring Mobile */
+  .smart-monitoring-section {
+    flex-direction: column-reverse !important;
+    gap: 40px !important;
+    padding: 0 16px !important;
+    margin-top: 60px !important;
+  }
+  
+  .smart-monitoring-mockup-wrapper {
+    width: 100% !important;
+    transform: scale(0.9) !important;
+  }
+}
