@@ -4,6 +4,13 @@ import { motion } from 'motion/react';
 
 const services = [
     {
+        id: 'solar',
+        title: 'SOLAR',
+        subtitle: 'Own Your Power Today',
+        image: '/coreservices/745196_d2169ed16c04432ea8211cd801b50f25~mv2.png',
+        link: '/solar'
+    },
+    {
         id: 'windows',
         title: 'WINDOWS',
         subtitle: 'Pella Certified Installer',
@@ -14,16 +21,8 @@ const services = [
         id: 'roofing',
         title: 'ROOFING',
         subtitle: 'Professional Installations',
-        // Swapped roofing and solar images based on feedback
         image: '/coreservices/745196_f4425d1f46794378941c2171cb924664~mv2.png',
         link: '/roofing'
-    },
-    {
-        id: 'solar',
-        title: 'SOLAR',
-        subtitle: 'Own Your Power Today',
-        image: '/coreservices/745196_d2169ed16c04432ea8211cd801b50f25~mv2.png',
-        link: '/solar'
     }
 ];
 
@@ -31,7 +30,7 @@ const HomeServices = () => {
     return (
         <section style={{
             width: '100%',
-            padding: '120px 5%',
+            padding: '120px 5% 40px 5%',
             position: 'relative'
         }}>
             <div style={{

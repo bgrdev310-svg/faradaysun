@@ -278,33 +278,62 @@ export default function WindowsPage() {
                             <h2 className="michroma-title" style={{ fontSize: 'clamp(28px, 4vw, 40px)', color: '#fff', marginBottom: '24px', lineHeight: 1.3 }}>
                                 READY TO UPGRADE YOUR <span style={{ color: '#00d4ff' }}>HOME?</span>
                             </h2>
-                            <Link to="/estimate" style={{ textDecoration: 'none' }}>
-                                <button 
-                                    style={{
-                                        padding: '16px 40px',
-                                        background: '#00d4ff',
-                                        color: '#000',
-                                        border: 'none',
-                                        borderRadius: '12px',
-                                        fontFamily: 'Inter, system-ui, sans-serif',
-                                        fontSize: '16px',
-                                        fontWeight: 700,
-                                        cursor: 'pointer',
-                                        transition: 'all 0.3s ease',
-                                        letterSpacing: '1px'
-                                    }}
-                                    onMouseOver={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-2px)';
-                                        e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 212, 255, 0.4)';
-                                    }}
-                                    onMouseOut={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                    }}
-                                >
-                                    CONTACT US TODAY
-                                </button>
-                            </Link>
+                            <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                <Link to="/pella-certified-window-installers" style={{ textDecoration: 'none' }}>
+                                    <button 
+                                        style={{
+                                            padding: '16px 40px',
+                                            background: 'transparent',
+                                            color: '#00d4ff',
+                                            border: '2px solid #00d4ff',
+                                            borderRadius: '12px',
+                                            fontFamily: 'Inter, system-ui, sans-serif',
+                                            fontSize: '16px',
+                                            fontWeight: 700,
+                                            cursor: 'pointer',
+                                            transition: 'all 0.3s ease',
+                                            letterSpacing: '1px'
+                                        }}
+                                        onMouseOver={(e) => {
+                                            e.currentTarget.style.background = 'rgba(0, 212, 255, 0.1)';
+                                            e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 212, 255, 0.2)';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.currentTarget.style.background = 'transparent';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                        }}
+                                    >
+                                        MORE INFO
+                                    </button>
+                                </Link>
+                                <Link to="/estimate" style={{ textDecoration: 'none' }}>
+                                    <button 
+                                        style={{
+                                            padding: '16px 40px',
+                                            background: '#00d4ff',
+                                            color: '#000',
+                                            border: 'none',
+                                            borderRadius: '12px',
+                                            fontFamily: 'Inter, system-ui, sans-serif',
+                                            fontSize: '16px',
+                                            fontWeight: 700,
+                                            cursor: 'pointer',
+                                            transition: 'all 0.3s ease',
+                                            letterSpacing: '1px'
+                                        }}
+                                        onMouseOver={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 212, 255, 0.4)';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                        }}
+                                    >
+                                        CONTACT US TODAY
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </FadeIn>

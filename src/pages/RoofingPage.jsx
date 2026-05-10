@@ -206,32 +206,33 @@ export default function RoofingPage() {
                             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '18px', lineHeight: 1.8, marginBottom: '32px' }}>
                                 Call or reach out today to see if you can get your roof replaced for free. Let our experts inspect your property for hidden storm damage before it causes leaks.
                             </p>
-                            <button 
-                                className="michroma-title"
-                                onClick={() => window.dispatchEvent(new CustomEvent('openContactModal'))}
-                                style={{
-                                    padding: '16px 32px',
-                                    background: '#00d4ff',
-                                    color: '#000',
-                                    border: 'none',
-                                    borderRadius: '12px',
-                                    fontSize: '14px',
-                                    fontWeight: 700,
-                                    cursor: 'pointer',
-                                    transition: 'all 0.3s ease',
-                                    letterSpacing: '1px'
-                                }}
-                                onMouseOver={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(-2px)';
-                                    e.currentTarget.style.boxShadow = '0 10px 20px rgba(0, 212, 255, 0.4)';
-                                }}
-                                onMouseOut={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(0)';
-                                    e.currentTarget.style.boxShadow = 'none';
-                                }}
-                            >
-                                MORE INFO
-                            </button>
+                            <Link to="/hail" style={{ textDecoration: 'none' }}>
+                                <button 
+                                    style={{
+                                        padding: '16px 32px',
+                                        background: '#00d4ff',
+                                        color: '#000',
+                                        border: 'none',
+                                        borderRadius: '12px',
+                                        fontFamily: 'Inter, system-ui, sans-serif',
+                                        fontSize: '14px',
+                                        fontWeight: 700,
+                                        cursor: 'pointer',
+                                        transition: 'all 0.3s ease',
+                                        letterSpacing: '1px'
+                                    }}
+                                    onMouseOver={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-2px)';
+                                        e.currentTarget.style.boxShadow = '0 10px 20px rgba(0, 212, 255, 0.4)';
+                                    }}
+                                    onMouseOut={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                    }}
+                                >
+                                    MORE INFO
+                                </button>
+                            </Link>
                         </FadeIn>
                     </div>
                     <div style={{ flex: '1 1 500px', position: 'relative' }}>
