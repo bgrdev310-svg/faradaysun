@@ -47,7 +47,8 @@ export default function HailPage() {
         fontSize: '15px',
         marginBottom: '16px',
         outline: 'none',
-        transition: 'all 0.3s ease'
+        transition: 'all 0.3s ease',
+        boxSizing: 'border-box'
     };
 
     return (
@@ -63,11 +64,97 @@ export default function HailPage() {
             flexDirection: 'column',
             background: 'transparent'
         }}>
-            
-            <section style={{ padding: '20px 5% 120px', display: 'flex', flexWrap: 'wrap', gap: '60px', alignItems: 'stretch' }}>
+            {/* Mobile responsive styles */}
+            <style>{`
+                .hail-section {
+                    padding: 20px 5% 120px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 60px;
+                    align-items: stretch;
+                }
+                .hail-left {
+                    flex: 1 1 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .hail-right {
+                    flex: 1 1 500px;
+                    position: relative;
+                }
+                .hail-form-wrapper {
+                    width: 100%;
+                    min-height: 800px;
+                    border-radius: 40px;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 40px;
+                }
+                .hail-form-card {
+                    width: 100%;
+                    max-width: 450px;
+                    padding: 40px;
+                    border-radius: 32px;
+                    position: relative;
+                    z-index: 2;
+                    background: rgba(15, 16, 17, 0.7);
+                    backdrop-filter: blur(20px);
+                    border: 1px solid rgba(255,255,255,0.1);
+                    box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+                .hail-name-row {
+                    display: flex;
+                    gap: 16px;
+                }
+                @media (max-width: 768px) {
+                    .hail-section {
+                        padding: 20px 3% 60px;
+                        gap: 30px;
+                    }
+                    .hail-left,
+                    .hail-right {
+                        flex: 1 1 100%;
+                    }
+                    .hail-form-wrapper {
+                        min-height: 600px;
+                        border-radius: 24px;
+                        padding: 20px 16px;
+                    }
+                    .hail-form-card {
+                        max-width: 100%;
+                        padding: 28px 20px;
+                        border-radius: 20px;
+                    }
+                    .hail-name-row {
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .hail-section {
+                        padding: 16px 2% 40px;
+                        gap: 20px;
+                    }
+                    .hail-form-wrapper {
+                        min-height: 500px;
+                        border-radius: 20px;
+                        padding: 16px 12px;
+                    }
+                    .hail-form-card {
+                        padding: 24px 16px;
+                        border-radius: 16px;
+                    }
+                }
+            `}</style>
+
+            <section className="hail-section">
                 
                 {/* LEFT SIDE - CONTENT */}
-                <div style={{ flex: '1 1 500px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div className="hail-left">
                     <FadeIn direction="right">
                         <div style={{
                             display: 'inline-flex',
@@ -155,19 +242,9 @@ export default function HailPage() {
                 </div>
 
                 {/* RIGHT SIDE - FORM & IMAGE */}
-                <div style={{ flex: '1 1 500px', position: 'relative' }}>
+                <div className="hail-right">
                     <FadeIn direction="left" delay={0.3}>
-                        <div style={{
-                            width: '100%',
-                            minHeight: '800px',
-                            borderRadius: '40px',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            padding: '40px'
-                        }}>
+                        <div className="hail-form-wrapper">
                             {/* Background Image with overlay */}
                             <img 
                                 src="/roofing/121efc_f160b810ca9b4d84aceb5c360d2e8a97~mv2.png" 
@@ -185,23 +262,13 @@ export default function HailPage() {
                             }}/>
 
                             {/* Floating Form */}
-                            <div className="premium-glass-card" style={{
-                                width: '100%', maxWidth: '450px',
-                                padding: '40px',
-                                borderRadius: '32px',
-                                position: 'relative',
-                                zIndex: 2,
-                                background: 'rgba(15, 16, 17, 0.7)',
-                                backdropFilter: 'blur(20px)',
-                                border: '1px solid rgba(255,255,255,0.1)',
-                                boxShadow: '0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)'
-                            }}>
+                            <div className="premium-glass-card hail-form-card">
                                 <h3 className="michroma-title" style={{ fontSize: '24px', color: '#fff', textAlign: 'center', marginBottom: '32px' }}>
                                     FREE <span style={{ color: '#00d4ff' }}>INSPECTION</span>
                                 </h3>
 
                                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
-                                    <div style={{ display: 'flex', gap: '16px' }}>
+                                    <div className="hail-name-row">
                                         <input 
                                             type="text" name="firstName" placeholder="First Name *" required
                                             value={formData.firstName} onChange={handleChange}

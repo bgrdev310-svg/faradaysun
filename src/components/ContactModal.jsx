@@ -27,8 +27,8 @@ const contactOptions = [
   {
     id: 'whatsapp',
     name: 'WhatsApp',
-    value: '+213 659 308 807',
-    href: 'https://wa.me/213659308807',
+    value: '+1 XXX XXX XXXX',
+    href: 'https://wa.me/1XXXXXXXXXX',
     color: 'rgba(37,211,102,0.8)',
     hoverBorder: 'rgba(37,211,102,0.25)',
     hoverShadow: 'rgba(37,211,102,0.08)',

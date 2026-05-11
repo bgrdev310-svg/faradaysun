@@ -26,7 +26,7 @@ const AuthPage = () => {
   const [password, setPassword] = useState('');
   const [cpwd, setCpwd] = useState('');
   const [phone, setPhone] = useState('');
-  const [cc, setCc] = useState('+213');
+  const [cc, setCc] = useState('+1');
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
 
   const otpRefs = useRef([]);
