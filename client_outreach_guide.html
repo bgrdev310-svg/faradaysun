@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Outreach Playbook — @bgr.dev</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0b0e;--card:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.08);--accent:#00d4ff;--accent2:#6366f1;--text:#fff;--dim:rgba(255,255,255,0.55);--green:#22c55e;--red:#ef4444;--yellow:#facc15}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 20% 0%,rgba(0,212,255,0.06),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(99,102,241,0.06),transparent 50%);pointer-events:none;z-index:0}
+.container{max-width:1000px;margin:0 auto;padding:40px 24px 80px;position:relative;z-index:1}
+h1{font-family:'Michroma',sans-serif;font-size:clamp(28px,5vw,42px);letter-spacing:2px;margin-bottom:8px;background:linear-gradient(90deg,#fff,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-family:'Michroma',sans-serif;font-size:clamp(18px,3vw,24px);letter-spacing:1.5px;margin:48px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--border);color:var(--accent)}
+h3{font-size:18px;font-weight:700;margin:24px 0 12px;color:#fff}
+h4{font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin:20px 0 12px}
+p,.desc{color:var(--dim);font-size:15px;margin-bottom:16px}
+.hero{text-align:center;padding:60px 20px;margin-bottom:40px;background:var(--card);border:1px solid var(--border);border-radius:24px;backdrop-filter:blur(20px)}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);border-radius:20px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.hero .badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.hero .subtitle{color:var(--dim);font-size:16px;max-width:600px;margin:12px auto 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:16px;transition:border-color .3s}
+.card:hover{border-color:rgba(0,212,255,0.2)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:16px 0}
+.stat{text-align:center;padding:24px}
+.stat .num{font-family:'Michroma',sans-serif;font-size:32px;color:var(--accent);display:block;margin-bottom:4px}
+.stat .label{font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.tag{display:inline-block;padding:4px 12px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.15);border-radius:8px;font-size:12px;font-weight:600;color:var(--accent);margin:3px}
+.tag.purple{background:rgba(99,102,241,0.1);border-color:rgba(99,102,241,0.2);color:#a5b4fc}
+.tag.green{background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.2);color:#86efac}
+.tag.yellow{background:rgba(250,204,21,0.1);border-color:rgba(250,204,21,0.2);color:#fde68a}
+.feature-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.feature-row:last-child{border-bottom:none}
+.feature-icon{width:36px;height:36px;border-radius:10px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.feature-text strong{color:#fff;font-size:14px}
+.feature-text span{color:var(--dim);font-size:13px;display:block;margin-top:2px}
+.email-block{background:rgba(0,212,255,0.02);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;font-family:'Inter',monospace;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.8;white-space:pre-wrap;word-wrap:break-word;margin:16px 0}
+.dm-block{background:rgba(99,102,241,0.04);border:1px solid rgba(99,102,241,0.15);border-radius:16px;padding:24px;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;white-space:pre-wrap;margin:12px 0}
+.tip{padding:16px 20px;border-radius:12px;margin:16px 0;font-size:14px}
+.tip.blue{background:rgba(0,212,255,0.06);border-left:3px solid var(--accent);color:rgba(255,255,255,0.8)}
+.tip.green{background:rgba(34,197,94,0.06);border-left:3px solid var(--green);color:rgba(255,255,255,0.8)}
+.tip.red{background:rgba(239,68,68,0.06);border-left:3px solid var(--red);color:rgba(255,255,255,0.8)}
+.tip.yellow{background:rgba(250,204,21,0.06);border-left:3px solid var(--yellow);color:rgba(255,255,255,0.8)}
+.price-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.price-table th{text-align:left;padding:12px 16px;background:rgba(0,212,255,0.06);border:1px solid var(--border);color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.price-table td{padding:12px 16px;border:1px solid var(--border);color:rgba(255,255,255,0.75)}
+.price-table tr:hover td{background:rgba(255,255,255,0.02)}
+.price-highlight{color:var(--green);font-weight:700;font-size:16px}
+.section-number{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);color:var(--accent);font-size:13px;font-weight:700;margin-right:10px;flex-shrink:0}
+.objection{cursor:pointer;padding:16px 20px;background:var(--card);border:1px solid var(--border);border-radius:12px;margin:8px 0}
+.objection summary{font-weight:600;color:#fff;font-size:15px;list-style:none;display:flex;align-items:center;gap:8px}
+.objection summary::before{content:'→';color:var(--accent)}
+.objection p{color:var(--dim);margin-top:12px;font-size:14px;padding-left:20px;border-left:2px solid rgba(0,212,255,0.15)}
+.footer{text-align:center;margin-top:60px;padding-top:32px;border-top:1px solid var(--border);color:var(--dim);font-size:13px}
+@media(max-width:600px){.container{padding:20px 16px 60px}.card{padding:20px}.email-block,.dm-block{padding:20px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <div class="badge">Client Outreach Playbook</div>
+  <h1>BGR DEV</h1>
+  <p class="subtitle">Your complete guide to selling the premium Faraday Sun website — 15+ pages, admin dashboard, and everything in between.</p>
+</div>
+
+<!-- STATS -->
+<div class="card-grid">
+  <div class="card stat"><span class="num">15+</span><span class="label">Public Pages</span></div>
+  <div class="card stat"><span class="num">10</span><span class="label">Homepage Sections</span></div>
+  <div class="card stat"><span class="num">8</span><span class="label">Admin Pages</span></div>
+  <div class="card stat"><span class="num">4</span><span class="label">Service Landing Pages</span></div>
+</div>
+
+<h2>🌐 PUBLIC WEBSITE — 15+ PAGES</h2>
+
+<h3>Homepage (10 Custom Sections)</h3>
+<div class="card">
+  <div class="feature-row"><div class="feature-icon">⚡</div><div class="feature-text"><strong>Hero Section</strong><span>Bold CTA, animated status pill, trust metrics (100+ Texas Clients)</span></div></div>
+  <div class="feature-row"><div class="feature-icon">🔧</div><div class="feature-text"><strong>Core Services Showcase</strong><span>Solar, Windows, Roofing — full-bleed image cards linking to dedicated pages</span></div></div>
+  <div class="feature-row"><div class="feature-icon">📋</div><div class="feature-text"><strong>The Process</strong><span>Survey → Install → Save walkthrough</span></div></div>
+  <div class="feature-row"><div class="feature-icon">🃏</div><div class="feature-text"><strong>Feature Cards</strong><span>Key selling points in a visual grid</span></div></div>
+  <div class="feature-row"><div class="feature-icon">🏠</div><div class="feature-text"><strong>Roof Engineering</strong><span>Technical expertise showcase</span></div></div>
+  <div class="feature-row"><div class="feature-icon">📱</div><div class="feature-text"><strong>Smart Monitoring</strong><span>Realistic iPhone app mockup with battery ring and solar panel SVG</span></div></div>
+  <div class="feature-row"><div class="feature-icon">🚗</div><div class="feature-text"><strong>Cybertruck Fleet</strong><span>Bento gallery + Instagram @thatbluecybertruck callout</span></div></div>
+  <div class="feature-row"><div class="feature-icon">⭐</div><div class="feature-text"><strong>Testimonials</strong><span>Star ratings, verified badges, real client quotes</span></div></div>
+  <div class="feature-row"><div class="feature-icon">🔋</div><div class="feature-text"><strong>Grid Independence</strong><span>Energy independence value proposition</span></div></div>
+  <div class="feature-row"><div class="feature-icon">❓</div><div class="feature-text"><strong>FAQ Accordion</strong><span>Expandable Q&A to reduce support calls</span></div></div>
+</div>
+
+<h3>Dedicated Service Pages</h3>
+<div class="card-grid">
+  <div class="card">
+    <h4>☀️ Solar Page</h4>
+    <p>Tax credit urgency hero, benefits cards, hardware showcase (Q Cells, Enphase), zig-zag sections, past work gallery, 6-Year Warranty badge</p>
+    <div><span class="tag">Lead Capture</span><span class="tag">Gallery</span><span class="tag">CTA</span></div>
+  </div>
+  <div class="card">
+    <h4>🏠 Roofing Page</h4>
+    <p>Full hero, Owens Corning partnership, installation walkthrough, hail damage section with link to dedicated page</p>
+    <div><span class="tag">Partnership</span><span class="tag">CTA</span></div>
+  </div>
+  <div class="card">
+    <h4>🪟 Windows & Doors</h4>
+    <p>Seasonal sale hero, Pella partnership, Series showcase (250, Lifestyle, Impervia), benefits cards, full-width image CTA</p>
+    <div><span class="tag">Product Cards</span><span class="tag">Sale Banner</span></div>
+  </div>
+  <div class="card">
+    <h4>🌨️ Hail Damage</h4>
+    <p>Split-layout landing page, numbered steps, integrated lead capture form with background image, fully responsive</p>
+    <div><span class="tag green">Lead Form</span><span class="tag">Split Layout</span></div>
+  </div>
+</div>
+
+<h3>Specialty & Additional Pages</h3>
+<div class="card-grid">
+  <div class="card"><h4>🏅 Pella Certified Installers</h4><p>Hero + consultation form, dual branding, Pella partnership banner</p></div>
+  <div class="card"><h4>🚗 Cybertruck Fleet</h4><p>5+ image gallery, lightbox zoom, Instagram promotion</p></div>
+  <div class="card"><h4>📝 Free Estimate</h4><p>Premium split-layout quote form with service selection</p></div>
+  <div class="card"><h4>📊 Request Status Tracker</h4><p>Client portal — ID lookup, progress timeline, schedule & pricing</p></div>
+  <div class="card"><h4>📄 About / Services / Contact</h4><p>Company story, service cards, lead capture forms</p></div>
+  <div class="card"><h4>❓ FAQ / Gallery / Auth</h4><p>Accordion FAQ, project showcase, Login/Signup</p></div>
+</div>
+
+<h2>🖥️ ADMIN DASHBOARD — 8 PAGES</h2>
+<div class="tip blue"><strong>💡 This is your biggest selling point.</strong> Most freelancers only deliver a public website. You're delivering a full business management system. That's what separates a $500 project from a $3,000+ project.</div>
+
+<div class="card">
+  <div class="feature-row"><div class="section-number">1</div><div class="feature-text"><strong>Dashboard</strong><span>KPI stat cards with mini charts, revenue tracking, recent requests, today's schedule, quick actions</span></div></div>
+  <div class="feature-row"><div class="section-number">2</div><div class="feature-text"><strong>Analytics</strong><span>Area charts, bar charts, pie charts, regional performance — full data visualizations</span></div></div>
+  <div class="feature-row"><div class="section-number">3</div><div class="feature-text"><strong>Requests & Leads</strong><span>Filterable CRM-style table, accept/reject, schedule installs with technician assignment</span></div></div>
+  <div class="feature-row"><div class="section-number">4</div><div class="feature-text"><strong>Installation Calendar</strong><span>Month/week/day views, color-coded appointments, upcoming events sidebar</span></div></div>
+  <div class="feature-row"><div class="section-number">5</div><div class="feature-text"><strong>Pages Manager</strong><span>Edit ALL website pages (Home, About, Services) with live preview — full CMS control</span></div></div>
+  <div class="feature-row"><div class="section-number">6</div><div class="feature-text"><strong>FAQ Manager</strong><span>Add, edit, delete FAQ entries on the fly</span></div></div>
+  <div class="feature-row"><div class="section-number">7</div><div class="feature-text"><strong>Contact Manager</strong><span>Update business contact info instantly</span></div></div>
+  <div class="feature-row"><div class="section-number">8</div><div class="feature-text"><strong>Settings</strong><span>Profile, security, notifications, language/timezone</span></div></div>
+</div>
+
+<h2>📧 EMAIL TEMPLATE — FARADAY SUN</h2>
+<p>Subject: <strong>Your solar brand deserves a better website — here's proof</strong></p>
+
+<div class="email-block">Hi [Name],
+
+I'm [Your Name] from BGR Dev (@bgr.dev) — I'm a web developer who specializes in building premium websites for the solar and renewable energy industry.
+
+I came across Faraday Sun's website and was genuinely impressed by the quality of your work — your services, your fleet, your reputation. But honestly? Your current website doesn't reflect the caliber of what you actually deliver. It's underselling you.
+
+I recently completed a full front-end build specifically for a company like yours, and I believe it would be the upgrade Faraday Sun deserves. This isn't a template — it was built from scratch to convert visitors into leads and make your brand look as premium as the service behind it.
+
+━━━ PUBLIC WEBSITE (15+ Pages) ━━━
+
+Homepage (10 custom sections)
+  → Bold hero with CTA, animated status pill, trust metrics
+  → Core Services showcase (Solar, Windows, Roofing)
+  → The Process walkthrough, Feature Cards, Roof Engineering
+  → Smart Monitoring iPhone mockup
+  → Cybertruck Fleet bento gallery + Instagram callout
+  → Testimonials grid with star ratings
+  → Grid Independence, FAQ accordion, premium footer
+
+Dedicated Service Pages (4 full pages)
+  → Solar — tax credit hero, hardware showcase, past work gallery
+  → Roofing — Owens Corning partnership, installation walkthrough
+  → Windows — Pella Series showcase, seasonal sale banner
+  → Hail Damage — split-layout with lead capture form
+
+Specialty Pages
+  → Pella Certified Installers, Cybertruck Fleet, Free Estimate
+  → Request Status Tracker — client portal with progress timeline
+
+Additional Pages
+  → About, Services, Contact, FAQ, Gallery, Login/Signup
+
+━━━ ADMIN DASHBOARD (8 Full Pages) ━━━
+
+  → Dashboard, Analytics, Requests & Leads, Calendar
+  → Pages Manager — edit ALL pages with live preview
+  → FAQ Manager, Contact Manager, Settings
+
+━━━ WHY THIS MATTERS ━━━
+
+  → Your brand will look as premium as the work you deliver
+  → More visitors convert to leads with strategic CTAs
+  → Showcase your fleet, Pella partnership, hail expertise
+  → Full content control — no developer needed for updates
+  → Client Request Tracker reduces support calls
+
+You can preview the live demo here: [YOUR DEPLOYED LINK]
+
+I'd love to set up a 15-minute call to walk you through it.
+
+Best regards,
+[Your Name]
+BGR Dev — @bgr.dev</div>
+
+<h2>📱 INSTAGRAM DM SCRIPTS</h2>
+
+<h3>DM #1 — Cold Opener</h3>
+<h4>Template A — Direct Value</h4>
+<div class="dm-block">Hey [Name] 👋
+
+I came across your page and I can see you guys are doing serious work in the solar space.
+
+I'm a web developer who specializes in solar energy websites, and I actually just finished building a premium site for this exact niche — dark premium design, 15+ pages, full admin dashboard, mobile responsive, the works.
+
+Would you be open to a quick look? I think it could really help you stand out online and convert more of those leads into installs.
+
+No pressure at all — just thought it'd be a perfect fit. 🤝
+
+— BGR Dev</div>
+
+<h4>Template B — "Your Website Doesn't Match Your Work"</h4>
+<div class="dm-block">Hey [Name] 👋
+
+I checked out your website and honestly — the work you do is way more premium than how it looks online right now. Your site is underselling you.
+
+I build high-end solar & home services websites (dark modern design, 15+ pages, dedicated service pages, admin panel with full CMS, lead capture, responsive on all devices) and I just finished one that I think would be a crazy upgrade for you.
+
+Want me to send over a quick preview? It takes 30 seconds to look and I think you'd love it.
+
+— @bgr.dev</div>
+
+<h4>Template C — "No Website"</h4>
+<div class="dm-block">Hey [Name] 👋
+
+Your work looks incredible on here — but I noticed you don't have a website yet?
+
+I'm a web dev who just built a full premium solar company website — modern dark design, admin dashboard, lead forms, gallery, FAQ — everything a solar brand needs to look legit and close more deals.
+
+I'd love to show it to you. It could be a game-changer for converting your IG followers into actual paying customers.
+
+Want me to send a quick demo link? 🔗
+
+— @bgr.dev</div>
+
+<h3>DM #2 — Follow-Up (They Show Interest)</h3>
+<div class="dm-block">Awesome! Here it is 👇
+
+🌐 Public Website: [YOUR DEPLOYED LINK]
+🖥️ Admin Panel: [YOUR DEPLOYED LINK]/admin/dashboard
+
+PUBLIC SITE:
+✅ 15+ pages (Solar, Roofing, Windows, Hail, Cybertruck, Estimate, Request Tracker + more)
+✅ Dedicated landing pages for each service with lead capture
+✅ Smart monitoring iPhone mockup + Cybertruck fleet showcase
+✅ Mobile-first responsive design
+
+ADMIN DASHBOARD:
+✅ Dashboard with KPI stats, charts, today's schedule
+✅ Full analytics, lead management, installation calendar
+✅ Pages Manager — edit ALL pages with live preview
+✅ FAQ manager, contact manager, settings
+
+Front-end is 100% done. Backend (database, auth, email) = Phase 2.
+
+Want to hop on a quick call? I can walk you through it live 🤝</div>
+
+<h3>DM #3 — If They Go Silent (48-72h later)</h3>
+<div class="dm-block">Hey [Name] — just bumping this in case it got buried 🙂
+
+No worries if the timing's off — I just know a strong website is the #1 thing that separates solar companies that close at 30% vs 60%.
+
+The offer's open whenever you're ready. 🤝</div>
+
+<div class="tip red"><strong>⚠️ DO NOT send more than 2 follow-ups.</strong> If they don't reply after DM #3, move on. Desperation kills deals.</div>
+
+<h2>💰 PRICING</h2>
+<div class="tip yellow"><strong>💡 Never mention price in the first message.</strong> Let them see the value first, then discuss pricing on a call.</div>
+
+<table class="price-table">
+  <tr><th>Package</th><th>What's Included</th><th>Price Range</th></tr>
+  <tr><td><strong>Front-End Only</strong></td><td>All 15+ pages, admin UI, responsive, deployed</td><td class="price-highlight">$1,500 – $3,000</td></tr>
+  <tr><td><strong>Full Stack</strong></td><td>+ Database, real auth, email integration, CRM</td><td class="price-highlight">$3,000 – $6,000</td></tr>
+  <tr><td><strong>Full Stack + Maintenance</strong></td><td>Everything above + hosting, updates, bug fixes</td><td class="price-highlight">$4,000 – $8,000 + $150–300/mo</td></tr>
+</table>
+
+<h2>🛡️ OBJECTION HANDLING</h2>
+
+<details class="objection"><summary>"We already have a website"</summary><p>Totally understand! I'm not saying yours is bad — but take a quick look at this demo [LINK]. If it's a clear upgrade from what you have now, it might be worth a conversation. Most solar companies I've seen online are running templates from 2018. This is 2026-level design.</p></details>
+<details class="objection"><summary>"It's too expensive"</summary><p>I hear you. But think about it this way — if this website helps you close even ONE extra solar install per month (average install is $15,000-$25,000), it pays for itself in the first week. This isn't an expense, it's an investment in your sales pipeline.</p></details>
+<details class="objection"><summary>"We'll think about it"</summary><p>Of course! No rush. I'll keep the demo link active. Just know that I'm only offering this to a couple of solar companies right now to keep the design exclusive — once it's sold, I'll be moving on to a new project. 🤝</p></details>
+<details class="objection"><summary>"Can you make changes?"</summary><p>Absolutely! Everything is fully customizable — your logo, colors, images, text, and I can add or remove any sections. The React codebase makes it very easy to adapt.</p></details>
+
+<h2>🔥 PRO TIPS</h2>
+<div class="card-grid">
+  <div class="card"><strong>1. Deploy first</strong><p>You MUST have a live link. Use Vercel or Netlify — both free.</p></div>
+  <div class="card"><strong>2. Record a walkthrough</strong><p>30-60 second screen recording. Pin it on your Instagram.</p></div>
+  <div class="card"><strong>3. Post on Instagram</strong><p>3-4 carousel posts. Use #solarwebdesign #webdeveloper #solarbusiness</p></div>
+  <div class="card"><strong>4. Target 1K–50K followers</strong><p>Big enough to have budget, small enough to not have in-house devs.</p></div>
+  <div class="card"><strong>5. Always push for a call</strong><p>DM deals close at 5%. Call deals close at 30%+.</p></div>
+  <div class="card"><strong>6. Customize the demo</strong><p>Change the company name in the hero before sending — shows effort.</p></div>
+</div>
+
+<div class="footer">
+  <p>Good luck king 👑 — you built something premium, now go sell it like it is. 🚀</p>
+  <p style="margin-top:8px">BGR Dev — @bgr.dev</p>
+</div>
+
+</div>
+</body>
+</html>

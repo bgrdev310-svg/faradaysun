@@ -8,18 +8,26 @@
 Before reaching out, you need to know **exactly** what you built and how to frame it. Here's your ammunition:
 
 ### The Product
-A **premium, fully-designed solar energy website + complete admin panel** — front-end complete, back-end ready to plug in.
+A **premium, fully-designed solar & home services website + complete admin panel** — front-end complete with 15+ pages, 10 homepage sections, dedicated service pages, client portal, and a full CMS-powered admin dashboard. Back-end ready to plug in.
 
 > [!TIP]
 > The **admin panel is your secret weapon**. Most freelancers only deliver a public website. You're delivering a public website AND a full business management dashboard. That's 2x the value, and it's what separates a $500 project from a $3,000+ project.
 
 ### Key Features to Highlight
 
-#### 🌐 Public Website (7+ Pages)
+#### 🌐 Public Website (15+ Pages)
 | Feature | Why the Client Cares |
 |---|---|
-| **Homepage** — Hero section, Feature Cards, The Process, Roof Engineering, Smart Monitoring mockup, FAQ, Grid Independence | One page covers their entire value proposition |
-| **Services Page** — 6 service cards, process timeline, impact stats, advantage badges | Educates customers and builds trust before they even call |
+| **Homepage (10 sections)** — Hero with CTA & status pill, Core Services showcase, The Process, Feature Cards, Roof Engineering, Smart Monitoring iPhone mockup, Cybertruck Fleet gallery, Testimonials grid, Grid Independence, FAQ accordion | One page covers their entire value proposition with 10 custom sections |
+| **Solar Page** — Tax credit urgency hero, benefits cards, hardware showcase (Q Cells, Enphase), zig-zag content, past work gallery, warranty badge, CTA | Dedicated landing page that sells solar and converts leads |
+| **Roofing Page** — Full hero, Owens Corning partnership, installation walkthrough, hail damage section with CTA | Shows expertise and drives roofing-specific leads |
+| **Windows & Doors Page** — Seasonal sale hero, Pella partnership, full Pella Series showcase (250, Lifestyle, Impervia), benefits cards, image CTA | Premium presentation for window services |
+| **Hail Damage Page** — Split-layout with numbered steps, integrated lead capture form, background image | Seasonal landing page that captures emergency leads |
+| **Pella Certified Installers** — Hero + embedded consultation form, dual branding, full-width Pella banner, sustainability section | Leverages partnership credibility to close window deals |
+| **Cybertruck Fleet Page** — Full gallery with 5+ images, lightbox zoom, fleet description, Instagram callout | Showcases brand personality and forward-thinking identity |
+| **Estimate Page** — Premium split-layout quote form with service selection, property details, monthly bill input | Turns interested visitors into qualified leads |
+| **Request Status Tracker** — Client portal with ID lookup, live progress timeline, schedule & pricing display | Clients can track their project status — reduces support calls |
+| **Services Overview** — 6 core service cards, process timeline, impact stats, advantage badges | Educates customers and builds trust before they even call |
 | **About Page** — Company story, mission, "By the Numbers" stat cards | Builds credibility and human connection |
 | **Contact Page** — Full lead capture form + Contact Modal | Multiple ways for leads to reach them = more business |
 | **FAQ Page** — Expandable accordion | Reduces support calls by answering common questions |
@@ -33,7 +41,7 @@ A **premium, fully-designed solar energy website + complete admin panel** — fr
 | **Analytics** — Area charts, bar charts, pie charts, KPIs, regional performance | Data-driven decisions without hiring an analyst |
 | **Requests & Leads** — Filterable table, accept/reject, schedule modal with technician assignment | Manage incoming leads like a CRM |
 | **Installation Calendar** — Month/Week/Day views, color-coded events, upcoming sidebar | Never miss an appointment or double-book a crew |
-| **Homepage Manager** — Editable sections with live preview panel | Change website content themselves — no developer needed |
+| **Pages Manager** — Edit ALL website pages (Home, About, Services) with live preview panel | Change any page's content themselves — no developer needed. Full CMS control. |
 | **FAQ Manager** — Add/edit/delete FAQs | Keep their FAQ page updated without calling you |
 | **Contact Manager** — Manage contact information | Update phone, email, address on the fly |
 | **Settings** — Profile, Security, Notifications, General tabs | Full account management |
@@ -81,11 +89,11 @@ Here's exactly what's in the admin panel and how to talk about each page:
 **How to sell it:**
 > "Your entire installation schedule on one screen. Color-coded by service type, shows the address, the client, the time — your crew knows exactly where to be and when."
 
-### 5. Homepage Manager (`/admin/homepage-manager`)
-**What it has:** Collapsible accordion sections (Hero, About Preview, Service Cards, Testimonials) with editable text fields and image upload zones. Drag handle icons for reordering. **Live Preview panel** on the right side showing a mini rendering of the homepage with the edits in real-time. Save/Reset buttons.
+### 5. Pages Manager (`/admin/homepage-manager`)
+**What it has:** Full CMS for ALL website pages — Home, About, Services, and more. Collapsible accordion sections (Hero, About Preview, Service Cards, Testimonials) with editable text fields and image upload zones. Drag handle icons for reordering. **Live Preview panel** on the right side showing a mini rendering of the page with the edits in real-time. Save/Reset buttons.
 
 **How to sell it:**
-> "Want to change the headline on your homepage? You just type it here and see the preview update instantly. No need to call a developer or wait 3 days for an update. You own your content."
+> "Want to change the headline on your homepage? Update your About page? Edit your service descriptions? You just pick the page, type your changes, and see the preview update instantly. No need to call a developer or wait 3 days for an update. You own ALL your content."
 
 ### 6. FAQ Manager (`/admin/faq-manager`)
 **What it has:** List of FAQ items with edit/delete actions. Add new FAQ form with question and answer fields.
@@ -106,7 +114,7 @@ Here's exactly what's in the admin panel and how to talk about each page:
 > "Full control over your account — change your password, set up notification preferences so you get pinged when a new lead comes in, choose your timezone. It's your system."
 
 ### Admin Panel Technical Highlights
-- **Sidebar navigation** with icon + label, grouped into "Main" (Dashboard, Analytics, Requests, Schedule) and "Manage" (Homepage, FAQ, Contact Info, Settings)
+- **Sidebar navigation** with icon + label, grouped into "Main" (Dashboard, Analytics, Requests, Schedule) and "Manage" (Pages, FAQ, Contact Info, Settings)
 - **Top navbar** with search bar, notification bell with dropdown, and profile avatar
 - **"Plus Jakarta Sans" font** — different from the public site, giving the admin its own premium identity
 - **Indigo/purple gradient accent** color scheme vs the cyan/teal public site — clearly distinct UI
@@ -138,15 +146,15 @@ No pressure at all — just thought it'd be a perfect fit. 🤝
 — BGR Dev
 ```
 
-#### Template B — The "I Noticed a Problem" Approach
-> Use this if the company has a weak website or no website at all.
+#### Template B — The "Your Website Doesn't Match Your Work" Approach
+> Use this if the company has a website but it looks cheap, outdated, or doesn't represent their work well.
 
 ```
 Hey [Name] 👋
 
-I checked out your website and honestly — the work you do is way more premium than how it looks online right now.
+I checked out your website and honestly — the work you do is way more premium than how it looks online right now. Your site is underselling you.
 
-I build high-end solar websites (dark modern design, admin panel, lead capture, responsive on all devices) and I just finished one that I think would be a crazy upgrade for you.
+I build high-end solar & home services websites (dark modern design, 15+ pages, dedicated service pages, admin panel with full CMS, lead capture, responsive on all devices) and I just finished one that I think would be a crazy upgrade for you.
 
 Want me to send over a quick preview? It takes 30 seconds to look and I think you'd love it.
 
@@ -185,9 +193,12 @@ Awesome! Here it is 👇
 Here's the breakdown:
 
 PUBLIC SITE:
-✅ 7+ fully designed pages (Home, Services, About, Contact, FAQ, Gallery, Login)
+✅ 15+ fully designed pages (Home, Solar, Roofing, Windows, Hail Damage, Pella Certified, Cybertruck Fleet, Estimate, Services, About, Contact, FAQ, Gallery, Request Tracker, Login)
+✅ Dedicated landing pages for each service with lead capture
+✅ Client Request Status Tracker portal
 ✅ Smart monitoring iPhone app mockup
-✅ Lead capture forms + contact modal
+✅ Cybertruck fleet showcase
+✅ Lead capture forms + contact modal on every page
 ✅ Mobile-first responsive design
 
 ADMIN DASHBOARD (this is the game-changer):
@@ -195,7 +206,7 @@ ADMIN DASHBOARD (this is the game-changer):
 ✅ Full analytics page with area charts, bar charts, pie charts
 ✅ Lead/request management — accept, reject, schedule installs
 ✅ Installation calendar with month/week/day views
-✅ Homepage content editor with live preview
+✅ Pages Manager — edit ALL website pages with live preview (no developer needed)
 ✅ FAQ manager, contact manager, settings
 
 The front-end of both the website AND admin panel is 100% done. For the backend (database, real auth, email integration) that would be Phase 2.
@@ -238,74 +249,138 @@ If they give you their email, or you find a business email on their page/website
 ```
 Hi [Name],
 
-I'm [Your Name] from BGR Dev (@bgr.dev) — I'm a web developer who specializes
-in building premium websites for the solar and renewable energy industry.
+I'm [Your Name] from BGR Dev (@bgr.dev) — I'm a web developer who
+specializes in building premium websites for the solar and renewable
+energy industry.
 
-I recently completed a full front-end build for a solar panel company, and I
-believe it would be a perfect fit for [Their Company Name]. The website was
-built to convert visitors into leads and make your brand look as premium as
-the service you deliver.
+I came across Faraday Sun's website and was genuinely impressed by the
+quality of your work — your services, your fleet, your reputation.
+But honestly? Your current website doesn't reflect the caliber of what
+you actually deliver. It's underselling you.
+
+I recently completed a full front-end build specifically for a company
+like yours, and I believe it would be the upgrade Faraday Sun deserves.
+This isn't a template — it was built from scratch to convert visitors
+into leads and make your brand look as premium as the service behind it.
 
 HERE'S WHAT'S INCLUDED:
 
-━━━ PUBLIC WEBSITE (7+ Pages) ━━━
 
-Homepage
-  → Bold hero section with CTA, animated status pill, trust metrics
-  → "The Process" walkthrough (Consultation → Design → Installation → Monitoring)
-  → Feature cards, Roof Engineering section, Grid Independence section
+━━━ PUBLIC WEBSITE (15+ Pages) ━━━
+
+Homepage (10 custom sections)
+  → Bold hero section with CTA, animated status pill, and trust metrics
+  → "Core Services" showcase — Solar, Windows, Roofing — with
+    full-bleed image cards that link to dedicated service pages
+  → "The Process" walkthrough (Survey → Install → Save)
+  → Feature cards and Roof Engineering section
   → Smart Monitoring section with a realistic iPhone app mockup
+  → "Meet the Cybertruck" fleet showcase with bento gallery
+    and Instagram callout (@thatbluecybertruck)
+  → Client Testimonials grid with star ratings and verified badges
+  → Grid Independence section
   → FAQ accordion
+  → Premium footer with trust badges and full navigation
 
-Services Page
-  → 6 core service cards with icons
-  → Step-by-step process timeline
-  → Impact statistics (-85% bills, +6.8% property value)
-  → "Why Choose Us" advantage badges
+Dedicated Service Pages (4 full pages)
+  → Solar — Hero with tax credit urgency banner, benefits cards,
+    premium hardware showcase (Q Cells, Enphase), zig-zag content
+    sections (Why Solar, Installation, Costs & Savings, Maintenance
+    with 6-Year Warranty badge), past work gallery, and CTA
+  → Roofing — Full hero, service/benefits cards (Owens Corning
+    partnership, customer satisfaction), installation walkthrough,
+    hail damage section with link to dedicated hail page
+  → Windows & Doors — Hero with seasonal sale banner, Pella
+    partnership section, full Pella Series showcase (250 Series,
+    Lifestyle, Impervia), benefits cards, full-width image CTA
+  → Hail Damage — Split-layout landing page with numbered steps
+    (Whole House Inspection, Protect Your Asset, 10+ Years
+    Experience), integrated lead capture form with background
+    image, fully responsive
+
+Specialty Pages
+  → Pella Certified Installers — Hero with embedded consultation
+    form, Faraday + Pella dual branding, full-width Pella
+    partnership banner, sustainability & style section, CTA
+  → Cybertruck Fleet — Full gallery page with 5+ images,
+    lightbox zoom, fleet description, and Instagram promotion
+  → Free Estimate Page — Premium split-layout quote request
+    form with service selection, property details, and
+    monthly bill input
 
 Additional Pages
   → About Us (company story, mission, "By the Numbers" stats)
+  → Services Overview (6 core service cards, process timeline,
+    impact statistics, "Why Choose Us" advantage badges)
   → Contact Page (full lead capture form)
   → FAQ Page
   → Gallery Page
-  → Login / Signup
+  → Request Status Tracker — Client portal where customers
+    can look up their request by ID, see a live progress
+    timeline (Submitted → Under Review → Decision), view
+    schedule & pricing if accepted, or next steps if declined
+  → Login / Signup (auth system ready for backend)
+
 
 ━━━ ADMIN DASHBOARD (8 Full Pages) ━━━
 
 This is where it gets serious. The admin panel is a complete
-business management system designed specifically for solar companies:
+business management system designed specifically for solar
+and home services companies:
 
-  → Dashboard — KPI stat cards with mini charts, revenue tracking,
-    recent requests table, today's schedule, quick action buttons
-  → Analytics — Full data visualizations: area charts (requests vs
-    installs over time), bar charts (revenue by service), pie charts
-    (client sources), regional performance bars
-  → Requests & Leads — Filterable CRM-style table to manage every
-    incoming lead. Accept/reject with one click, then schedule the
-    install with technician assignment, date/time, and notes
+  → Dashboard — KPI stat cards with mini charts, revenue
+    tracking, recent requests table, today's schedule,
+    quick action buttons
+  → Analytics — Full data visualizations: area charts
+    (requests vs installs over time), bar charts (revenue
+    by service), pie charts (client sources), regional
+    performance bars
+  → Requests & Leads — Filterable CRM-style table to manage
+    every incoming lead. Accept/reject with one click, then
+    schedule the install with technician assignment, date/time,
+    and notes
   → Installation Calendar — Full month/week/day calendar with
     color-coded appointments and upcoming events sidebar
-  → Homepage Manager — Edit your website content with a live preview
-    panel. Change headlines, descriptions, images — no developer needed
+  → Pages Manager — Edit ALL your website pages from one place
+    with a live preview panel. Change headlines, descriptions,
+    images on your Home, About, Services pages — no developer
+    needed. Full CMS control.
   → FAQ Manager — Add, edit, delete FAQ entries on the fly
   → Contact Manager — Update business contact info instantly
   → Settings — Profile, security, notifications, language/timezone
 
 The admin panel has its own premium design system (indigo/purple
-accents, Plus Jakarta Sans font, Framer Motion animations) and is
-fully responsive on tablet and mobile.
+accents, Plus Jakarta Sans font, Framer Motion animations) and
+is fully responsive on tablet and mobile.
+
+
+━━━ WHY THIS MATTERS FOR FARADAY SUN ━━━
+
+Your current site doesn't show visitors the real Faraday Sun.
+This build was designed to:
+  → Make your brand look as premium as the work you deliver
+  → Convert more visitors into qualified leads with strategic
+    CTAs and embedded forms on every service page
+  → Showcase your Cybertruck fleet, Pella partnership, and
+    hail damage expertise — things your current site buries
+  → Give you full control over your content without needing
+    a developer every time you want to update something
+  → Give your clients a professional Request Tracker portal
+    so they always know their project status
+
 
 TECHNICAL SPECS:
   → Built with React (fast, scalable, modern)
   → Fully responsive (desktop, tablet, mobile)
   → Dark premium aesthetic with glassmorphism and micro-animations
-  → Optimized for SEO
+  → Framer Motion animations throughout
   → Ready for backend integration (Phase 2)
+
 
 You can preview the live demo here: [YOUR DEPLOYED LINK]
 
-I'd love to set up a 15-minute call to walk you through it and discuss
-how we can customize it for [Their Company Name].
+I'd love to set up a 15-minute call to walk you through it and
+discuss how we can customize it further for Faraday Sun.
 
 Looking forward to hearing from you.
 
@@ -326,9 +401,9 @@ BGR Dev — @bgr.dev
 
 | Package | What's Included | Suggested Price Range |
 |---|---|---|
-| **Front-End Only** | All 7+ pages, admin UI, responsive, deployed | **$800 – $1,500** |
-| **Full Stack (Front + Back)** | + Database, real auth, email integration, CRM connection | **$2,000 – $4,000** |
-| **Full Stack + Maintenance** | Everything above + monthly hosting, updates, bug fixes | **$2,500 – $5,000 + $100–200/mo** |
+| **Front-End Only** | All 15+ pages, admin UI, responsive, deployed | **$1,500 – $3,000** |
+| **Full Stack (Front + Back)** | + Database, real auth, email integration, CRM connection | **$3,000 – $6,000** |
+| **Full Stack + Maintenance** | Everything above + monthly hosting, updates, bug fixes | **$4,000 – $8,000 + $150–300/mo** |
 
 > [!NOTE]
 > These are starter prices. As you build your portfolio and get testimonials, increase them. Solar companies typically have marketing budgets of $2,000–$10,000/month, so a one-time website cost is easy for them to justify.

@@ -66,22 +66,26 @@ const Footer = () => {
                         <h4 className="footer-col-title">Navigation</h4>
                         <ul className="footer-links-list">
                             <li><Link to="/" className="footer-link">Home</Link></li>
-                            <li><Link to="/services" className="footer-link">Our Services</Link></li>
-                            <li><Link to="/gallery" className="footer-link">Gallery</Link></li>
                             <li><Link to="/about" className="footer-link">About Us</Link></li>
+                            <li><Link to="/services" className="footer-link">Services</Link></li>
                             <li><Link to="/contact" className="footer-link">Contact</Link></li>
+                            <li><Link to="/faq" className="footer-link">FAQ</Link></li>
+                            <li><Link to="/gallery" className="footer-link">Gallery</Link></li>
+                            <li><Link to="/estimate" className="footer-link">Free Estimate</Link></li>
                         </ul>
                     </div>
 
-                    {/* Services Column */}
+                    {/* Pages Column */}
                     <div className="footer-nav-col">
-                        <h4 className="footer-col-title">Services</h4>
+                        <h4 className="footer-col-title">Explore</h4>
                         <ul className="footer-links-list">
-                            <li><a href="#" className="footer-link">Roof Engineering</a></li>
-                            <li><a href="#" className="footer-link">Panel Installation</a></li>
-                            <li><a href="#" className="footer-link">Battery Storage</a></li>
-                            <li><a href="#" className="footer-link">Smart Monitoring</a></li>
-                            <li><a href="#" className="footer-link">Maintenance</a></li>
+                            <li><Link to="/solar" className="footer-link">Solar</Link></li>
+                            <li><Link to="/roofing" className="footer-link">Roofing</Link></li>
+                            <li><Link to="/windows" className="footer-link">Windows & Doors</Link></li>
+                            <li><Link to="/hail" className="footer-link">Hail Damage</Link></li>
+                            <li><Link to="/pella-certified-window-installers" className="footer-link">Pella Installers</Link></li>
+                            <li><Link to="/cybertruck" className="footer-link">Cybertruck Fleet</Link></li>
+                            <li><Link to="/request-status" className="footer-link">Request Tracker</Link></li>
                         </ul>
                     </div>
 
