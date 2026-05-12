@@ -96,9 +96,15 @@ const NavBar = () => {
                         >
                             <img src="/eco-house.png" alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </Link>
-                        <div className="hover-lift flex-row items-center justify-center" style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--panel-dark)', border: '1px solid var(--panel-border)', overflow: 'hidden', padding: '6px' }}>
+                        <Link 
+                            to="/admin" 
+                            className="hover-lift flex-row items-center justify-center" 
+                            aria-label="Go to admin panel"
+                            title="Admin Panel"
+                            style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--panel-dark)', border: '1px solid var(--panel-border)', overflow: 'hidden', padding: '6px', textDecoration: 'none' }}
+                        >
                             <img src="/sun.png" alt="Sun Settings" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                        </div>
+                        </Link>
                     </div>
 
                     {/* Hamburger Menu Button - Visible on mobile only */}
@@ -302,9 +308,16 @@ const NavBar = () => {
                     >
                         <img src="/eco-house.png" alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </button>
-                    <div className="flex-row items-center justify-center" style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--panel-dark)', border: '1px solid var(--panel-border)', overflow: 'hidden', padding: '8px' }}>
+                    <Link 
+                        to="/admin" 
+                        onClick={closeMenu}
+                        className="flex-row items-center justify-center" 
+                        aria-label="Go to admin panel"
+                        title="Admin Panel"
+                        style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--panel-dark)', border: '1px solid var(--panel-border)', overflow: 'hidden', padding: '8px', textDecoration: 'none' }}
+                    >
                         <img src="/sun.png" alt="Sun Settings" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Branding at bottom */}
