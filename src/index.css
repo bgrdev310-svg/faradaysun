@@ -1040,7 +1040,7 @@ body {
     aspect-ratio: unset !important;
     min-height: fit-content !important;
     max-width: 90% !important;
-    margin: 6px auto 0 auto !important;
+    margin: 32px auto 0 auto !important;
     background: linear-gradient(135deg, rgba(20, 25, 30, 0.6) 0%, rgba(10, 12, 15, 0.4) 100%) !important;
     backdrop-filter: blur(16px) !important;
     -webkit-backdrop-filter: blur(16px) !important;
