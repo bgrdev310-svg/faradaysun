@@ -241,16 +241,16 @@ const ContactPage = () => {
                     <ContactCard title="Phone" details={<>+1 (800) 555-0199<br />Mon-Fri 8am-8pm CST</>}>
                         <PhoneIcon />
                     </ContactCard>
-                    <ContactCard title="Email" details={<>hello@solarpanel.tx<br />Support: help@solarpanel.tx</>}>
+                    <ContactCard title="Email" details={<>hello@solarpanel.co<br />Support: help@solarpanel.co</>}>
                         <EmailIcon />
                     </ContactCard>
-                    <ContactCard title="Headquarters" details={<>100 Energy Way, Suite 400<br />Austin, Texas 78701</>}>
+                    <ContactCard title="Headquarters" details={<>100 Energy Way, Suite 400<br />Denver, Colorado 80202</>}>
                         <LocationIcon />
                     </ContactCard>
                     <ContactCard title="WhatsApp" details={<>+1 (800) 555-0199<br />24/7 Priority Support</>}>
                         <WhatsAppIcon />
                     </ContactCard>
-                    <ContactCard title="Instagram" details={<>@solarpanel.tx<br />See our latest installs</>}>
+                    <ContactCard title="Instagram" details={<>@solarpanel.co<br />See our latest installs</>}>
                         <InstagramIcon />
                     </ContactCard>
                 </div>
@@ -307,7 +307,7 @@ const ContactPage = () => {
                             </div>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <label style={{ color: 'var(--element-dim)', fontSize: '13px', fontWeight: 600, letterSpacing: '1px' }}>ZIP CODE</label>
-                                <input type="text" placeholder="78701"
+                                <input type="text" placeholder="80202"
                                     value={formData.zip}
                                     style={inputStyle('zip')}
                                     onChange={(e) => updateField('zip', e.target.value)}

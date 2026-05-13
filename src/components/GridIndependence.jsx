@@ -69,7 +69,7 @@ const GridIndependence = () => {
                     marginBottom: '24px'
                 }}>
                     <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff4444', boxShadow: '0 0 10px #ff4444' }} />
-                    TEXAS GRID INDEPENDENCE
+                    COLORADO GRID INDEPENDENCE
                 </div>
 
                 <h2 className="michroma-title" style={{
@@ -89,7 +89,7 @@ const GridIndependence = () => {
                     margin: '0 auto 32px auto',
                     fontWeight: 400
                 }}>
-                    Our intelligent battery systems keep your lights on, your food cold, and your family safe when the Texas grid goes down.
+                    Our intelligent battery systems keep your lights on, your food cold, and your family safe when the Colorado grid goes down.
                 </p>
 
                 <button 

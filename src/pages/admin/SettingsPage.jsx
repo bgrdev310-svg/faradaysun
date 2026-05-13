@@ -142,7 +142,7 @@ const SettingsPage = () => {
               <div className="admin-form-group">
                 <label className="admin-label">Timezone</label>
                 <select className="admin-input">
-                  <option>UTC -6:00 (Central Time - Texas)</option>
+                  <option>UTC -7:00 (Mountain Time - Colorado)</option>
                   <option>UTC +2:00 (Cairo)</option>
                   <option>UTC +0:00 (London)</option>
                   <option>UTC -5:00 (New York)</option>

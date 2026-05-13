@@ -246,8 +246,8 @@ const FeatureCards = () => {
         <FeatureCard
           icon={<MapPinIcon />}
           label="Service Area"
-          title="Texas Proud"
-          subtitle="Dallas · Austin · Houston"
+          title="Colorado Proud"
+          subtitle="Denver · CO Springs · Aurora"
           accent="#FFB450"
         />
         <FeatureCard

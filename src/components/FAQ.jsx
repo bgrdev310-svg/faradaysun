@@ -86,12 +86,12 @@ const FAQ = () => {
             {/* QA Items */}
             <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
                 <QAItem
-                    question="How much will I really save on my Texas energy bill?"
-                    answer="While savings vary based on your home’s energy consumption and the size of your solar system, most of our Texas customers see a 60% to 100% reduction in their monthly electric bills. With our integrated battery systems, you can even avoid peak rate charges altogether."
+                    question="How much will I really save on my Colorado energy bill?"
+                    answer="While savings vary based on your home’s energy consumption and the size of your solar system, most of our Colorado customers see a 60% to 100% reduction in their monthly electric bills. With our integrated battery systems, you can even avoid peak rate charges altogether."
                 />
                 <QAItem
-                    question="Do your solar panels withstand Texas hail and severe weather?"
-                    answer="Absolutely. We exclusively install Tier 1, monocrystalline silicon panels that are rigorously tested against severe weather. Our storm-proof mounting systems and impact-resistant glass are specifically engineered to endure 130+ MPH winds and extreme Texas hail storms."
+                    question="Do your solar panels withstand Colorado hail and severe weather?"
+                    answer="Absolutely. We exclusively install Tier 1, monocrystalline silicon panels that are rigorously tested against severe weather. Our storm-proof mounting systems and impact-resistant glass are specifically engineered to endure 130+ MPH winds and extreme Colorado hail storms."
                 />
                 <QAItem
                     question="What happens during a grid blackout?"

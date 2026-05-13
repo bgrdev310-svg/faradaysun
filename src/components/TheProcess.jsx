@@ -253,7 +253,7 @@ const TheProcess = () => {
                 <ProcessCard
                     number="02"
                     title="INSTALL"
-                    description="Precision engineering meets Texas durability. Fast, clean, expert installation."
+                    description="Precision engineering meets Colorado durability. Fast, clean, expert installation."
                     Icon={InstallIcon}
                 />
                 <ProcessCard

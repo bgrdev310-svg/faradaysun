@@ -47,7 +47,7 @@ const RoofEngineering = () => {
                     We don't just install; we optimize.
                 </p>
                 <p style={{ color: 'var(--element-dim)', fontSize: '16px', lineHeight: 1.6, margin: 0 }}>
-                    Every Texas home has a unique sun-path profile that requires expert analysis. We engineer your system to maximize output based on your specific roof architecture.
+                    Every Colorado home has a unique sun-path profile that requires expert analysis. We engineer your system to maximize output based on your specific roof architecture.
                 </p>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '16px' }}>
@@ -62,7 +62,7 @@ const RoofEngineering = () => {
                         <Checkmark />
                         <div>
                             <span style={{ fontSize: '16px', color: '#fff', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Storm-Proof Mounting</span>
-                            <span style={{ fontSize: '14px', color: 'var(--element-dim)' }}>Specialized racking systems designed to withstand 130+ MPH Texas winds.</span>
+                            <span style={{ fontSize: '14px', color: 'var(--element-dim)' }}>Specialized racking systems designed to withstand 130+ MPH Colorado winds.</span>
                         </div>
                     </div>
                     <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>

@@ -6,42 +6,42 @@ const galleryImages = [
         id: 1,
         url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800',
         title: '15kW Residential Array',
-        location: 'Austin, TX',
+        location: 'Denver, CO',
         span: 'col-span-2 row-span-2' // For masonry-like visual weight
     },
     {
         id: 2,
         url: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=800',
         title: 'Modern Architecture Integration',
-        location: 'Dallas, TX',
+        location: 'Boulder, CO',
         span: 'col-span-1 row-span-1'
     },
     {
         id: 3,
         url: 'https://images.unsplash.com/photo-1588612143003-f0a911765c95?auto=format&fit=crop&q=80&w=800',
         title: '8kW Off-Grid Setup',
-        location: 'San Antonio, TX',
+        location: 'CO Springs, CO',
         span: 'col-span-1 row-span-2'
     },
     {
         id: 4,
         url: 'https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=800',
         title: 'Suburban Solar & Battery',
-        location: 'Houston, TX',
+        location: 'Aurora, CO',
         span: 'col-span-1 row-span-1'
     },
     {
         id: 5,
         url: 'https://images.unsplash.com/photo-1595878715977-2e8f8df18ea8?auto=format&fit=crop&q=80&w=800',
         title: 'Commercial Roof Integration',
-        location: 'Plano, TX',
+        location: 'Fort Collins, CO',
         span: 'col-span-2 row-span-1'
     },
     {
         id: 6,
         url: 'https://images.unsplash.com/photo-1559302504-64aae6ca6b6f?auto=format&fit=crop&q=80&w=800',
         title: 'Minimalist Ground Mount',
-        location: 'Fort Worth, TX',
+        location: 'Aspen, CO',
         span: 'col-span-1 row-span-1'
     }
 ];
@@ -180,7 +180,7 @@ const GalleryPage = () => {
                     FEATURED INSTALLATIONS
                 </h1>
                 <p style={{ color: 'var(--element-dim)', fontSize: '18px', marginTop: '20px', maxWidth: '600px', margin: '20px auto 0 auto', lineHeight: 1.6 }}>
-                    Explore our portfolio of precision-engineered solar deployments bringing energy independence to homes across Texas.
+                    Explore our portfolio of precision-engineered solar deployments bringing energy independence to homes across Colorado.
                 </p>
             </div>
 

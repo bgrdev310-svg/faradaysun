@@ -75,10 +75,10 @@ const AboutPage = () => {
                     OUR STORY
                 </div>
                 <h1 className="michroma-title" style={{ fontSize: 'clamp(32px, 5vw, 48px)', marginBottom: '24px', lineHeight: 1.2 }}>
-                    PIONEERING TEXAS SOLAR
+                    PIONEERING COLORADO SOLAR
                 </h1>
                 <p style={{ color: 'var(--element-light)', fontSize: '18px', lineHeight: 1.6 }}>
-                    We didn't just adapt to the solar revolution; we helped build it in Texas. Born from a desire to provide absolute energy security against an unpredictable grid, our mission is to empower every homeowner with absolute grid independence.
+                    We didn't just adapt to the solar revolution; we helped build it in Colorado. Born from a desire to provide absolute energy security against an unpredictable grid, our mission is to empower every homeowner with absolute grid independence.
                 </p>
             </section>
 
@@ -113,7 +113,7 @@ const AboutPage = () => {
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
                     <h2 className="michroma-title" style={{ fontSize: '32px', margin: 0 }}>BUILT TO LAST</h2>
                     <p style={{ color: 'var(--element-dim)', fontSize: '16px', lineHeight: 1.6 }}>
-                        Texas weather is unforgiving. That’s why we refuse to compromise on hardware. We partner exclusively with Tier 1 manufacturers, utilizing monocrystalline black-on-black panels and intelligent micro-inverter technology.
+                        Colorado weather is unforgiving. That’s why we refuse to compromise on hardware. We partner exclusively with Tier 1 manufacturers, utilizing monocrystalline black-on-black panels and intelligent micro-inverter technology.
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
